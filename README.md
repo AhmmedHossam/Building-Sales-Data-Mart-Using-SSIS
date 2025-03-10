@@ -25,11 +25,13 @@ inserting unkown record incase of unkown product_id (business key)
 
 set identity_inser [table_name] on
 
------------------------------------
+....................................
 
 set identity_inser [table_name] off
 
 create index on business key
+
+-----------------------------------
 
 DIM2 : dim_customer
 
@@ -54,11 +56,13 @@ inserting unkown record incase of unkown product_id (business key)
 
 set identity_inser [table_name] on
 
------------------------------------
+...................................
 
 set identity_inser [table_name] off
 
 create index on business key
+
+-----------------------------------
 
 DIM3 : dim_terriotry
 
@@ -83,11 +87,13 @@ inserting unkown record incase of unkown product_id (business key)
 
 set identity_inser [table_name] on
 
------------------------------------
+......................................
 
 set identity_inser [table_name] off
 
 create index on business key
+
+-----------------------------------
 
 DIM : dim_date
 
@@ -96,7 +102,7 @@ unq keys:
 
 surrogate key : order_date_key.
 
-
+-----------------------------------
 
 Fact table sales : 
 
