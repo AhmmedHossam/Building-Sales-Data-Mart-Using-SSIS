@@ -199,6 +199,10 @@ picked type 1, next, check changing all over matching except for reorder_point m
 
 ![02](https://github.com/user-attachments/assets/917872ef-b526-4af0-9646-e19197d56f3f)
 
+step 8: repeat it for Dim Customer packages and Dim ter packages
+
+
+
 
 
 
