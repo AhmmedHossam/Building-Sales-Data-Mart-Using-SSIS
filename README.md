@@ -118,7 +118,7 @@ creat indexes on fks
 # 2-step2: SSIS
 
 
-Dim 1 : dim_customer ETL
+Dim 1 : dim_product ETL
 
 step 1 : identify source and destination databases
 
@@ -177,6 +177,27 @@ step 6.2 : choosing insull funcs and spicify req o/p exp
 
 ![01_product_table](https://github.com/user-attachments/assets/dfc44761-cf6d-42f9-a33d-049b159aceb8)
 
+step 7 : handling scd USING SCD WIZZARD (used for insering and updating)
+
+step 7.1 : pick connection manager (destination table)
+
+step 7.2 : choose pk ( business key of source table )
+
+step 7.3 : picking type 
+
+There are three main types of Slowly Changing Dimensions, each handled differently in the SCD Wizard:
+
+Type 0 (Historical): no change keep old
+
+Type 1 (Overwrite): When a value in the dimension changes, the old value is overwritten with the new value. No historical data is kept.
+
+Type 2 (Historical Tracking): When a value changes, a new record is created to reflect the change, while preserving the old record for historical tracking. This is useful for maintaining a history of changes.
+
+Type 3 (Limited History): Only a limited history is kept. For example, you might track only the current and previous values of a field. When a change occurs, the old value is moved to a separate column, and the new value is updated in the primary column.
+
+picked type 1, next, check changing all over matching except for reorder_point make it historical
+
+![02](https://github.com/user-attachments/assets/917872ef-b526-4af0-9646-e19197d56f3f)
 
 
 
